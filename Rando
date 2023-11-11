@@ -1,0 +1,17 @@
+import random
+
+class RandomNumberGame:
+def _init_(self, length):
+self.length = length
+self.numbers = set()
+
+def generate_unique_numbers(self):
+while len(self.numbers) < self.length:
+self.numbers.add(random.randint(1, 100)) # Генерация уникальных случайных чисел от 1 до 100
+
+def play(self):
+self.generate_unique_numbers()
+print(f"Here are your unique random numbers: {', '.join(map(str, self.numbers))}")
+
+game = RandomNumberGame(5) # 
+game.play()
