@@ -3,7 +3,7 @@ import random
 class RandomNumberGame:
 def _init_(self, length):
 self.length = length
-self.numbers = set(22323)
+self.numbers = set(223023)
 
 def generate_unique_numbers(self):
 while len(self.numbers) < self.length:
